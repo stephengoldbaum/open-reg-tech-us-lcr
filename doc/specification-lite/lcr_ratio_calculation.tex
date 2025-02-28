@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{MLCR Calculation Specification}
+\author{The Reg}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{LCR Ratio Calculation}
+
+The Liquidity Coverage Ratio (LCR) is calculated as:
+
+\subsection{LCR Formula}
+
+\[ 
+    LCR = \frac{HQLA}{Total Net Cash Outflow}
+\]
+
+\[ 
+    HQLA = (HQLA\ Level\ 1\ Additive - HQLA\ Level\ 1\ Subtractive) + 0.85(HQLA\ Level\ 2a\ Additive - HQLA\ Level\ 2a\ Subtractive)
+\]
+
+
+\[ 
+    HQLA\ Level\ 1\ Additive = \sum_{i=1}^{n} Balance\_{a1}
+\]
+
+\[ 
+    HQLA\ Level\ 1\ Subtractive = \sum_{i=1}^{n} Balance\_{s1}
+\]
+
+\[ 
+    HQLA\ Level\ 2a\ Additive = \sum_{i=1}^{n} Balance\_{a2a}
+\]
+
+\[ 
+    HQLA\ Level\ 2a\ Subtractive = \sum_{i=1}^{n} Balance\_{s2a}
+\]
+
+\[ 
+    Total\ Net\ Cash\ Outflows = Outflow\ Values - \min(Inflow\ Values, 0.75 \times Outflow\ Values)
+\]
+
+
+\[ 
+    \text{Outflow Values} = \sum_{i=1}^{n} Balance_o
+\]
+
+\subsection{Balance Aggregation}
+
+\[ 
+    Balance\_{a1} = \text{balances under rule code }
+    \begin{cases}
+        \text{§.20(a)(1)}
+    \end{cases}
+\]
+
+\[ 
+    Balance\_{s1}  = \text{balances under rule code }
+    \begin{cases}
+        \text{§.22(a)(3)}
+    \end{cases}
+\]
+
+\[ 
+    Balance\_{a2a}  = \text{balances under rule code }
+    \begin{cases}
+        \text{§.20(a)(1)-C}
+    \end{cases}
+\]
+
+\[ 
+    Balance\_{s2a}  = \text{balances under rule code }
+    \begin{cases}
+        \text{§.22(a)(4)}
+    \end{cases}
+\]
+
+\[ 
+    Balance\_o = \text{balances under rule codes}
+    \begin{cases}
+        \text{§}.32(a)(1) \\
+        \text{§}.32(a)(2) \\
+        \text{§.32(a)(3)} \\
+        \text{§.32(a)(4)} \\
+        \text{§.32(a)(5)} \\
+        \text{§.32(h)(1)(i)} \\
+        \text{§.32(h)(1)(ii)(A)} \\
+        \text{§.32(j)(1)(i)} \\
+        \text{§.32(j)(1)(ii)} \\
+        \text{§.32(j)(1)(iii)} \\
+        \text{§.32(j)(1)(iv)} \\
+        \text{§.32(j)(1)(vi)} \\
+        \text{§.32(j)(2)} \\
+        \text{§.32(k)} 
+    \end{cases}
+\]
+
+\end{document}

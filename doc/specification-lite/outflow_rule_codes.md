@@ -29,8 +29,8 @@ for non-technical writers taking shortcuts (like "I.A.1, 2, and 3" means any of 
 | Insured               | FDIC                     |
 | Rehypothecated        | #                        |
 
-#### Other Retail Deposits 
 #### (§.32(a)(2))
+##### Other Retail Deposits
 | Field            | Value                                         |
 |------------------|-----------------------------------------------|
 | Product          | O.D.1, 2, and 3                               |
@@ -42,8 +42,8 @@ for non-technical writers taking shortcuts (like "I.A.1, 2, and 3" means any of 
 | Insured          | Not FDIC for PID = 1 and 2, and # for PID = 3 |
 | Rehypothecated   | #                                             |
 
-#### Insured Placed Retail Deposits 
 #### (§.32(a)(3))
+##### Insured Placed Retail Deposits
 | Field                 | Value                    |
 |-----------------------|--------------------------|
 | Product               | O.D.14                   |
@@ -55,8 +55,8 @@ for non-technical writers taking shortcuts (like "I.A.1, 2, and 3" means any of 
 | Insured               | FDIC                     |
 | Rehypothecated        | #                        |
 
-#### Non-Insured Placed Retail Deposits
 #### (§.32(a)(4))
+##### Non-Insured Placed Retail Deposits
 | Field                 | Value                    |
 |-----------------------|--------------------------|
 | Product               | O.D.14                   |
@@ -68,8 +68,8 @@ for non-technical writers taking shortcuts (like "I.A.1, 2, and 3" means any of 
 | Insured               | Not FDIC                 |
 | Rehypothecated        | #                        |
 
-#### Other Retail Funding 
 #### (§.32(a)(5))
+##### Other Retail Funding
 | Field                 | Value                    |
 |-----------------------|--------------------------|
 | Product               | O.D.15                   |
@@ -82,56 +82,55 @@ for non-technical writers taking shortcuts (like "I.A.1, 2, and 3" means any of 
 | Rehypothecated        | NULL                     |
 
 #### (§.32(h)(1)(i))
-##### Insured Unsecured Wholesale Non-Operational Non-Financial 
-| Field                 | Value                                                                                                         |
-|-----------------------|---------------------------------------------------------------------------------------------------------------|
-| Product               | O.D.5 and 6                                                                                                   |
-| Counterparty          | Non-Financial Corporate, Sovereign, Central Bank, GSE, PSE, MDB, Other Supranational, Debt Issuing SPE, Other |
-| Maturity Amount       | *                                                                                                             |
-| Maturity Bucket       | <= 30 calendar days                                                                                           |
-| Collateral Class      | NULL or Other                                                                                                 |
-| Collateral Value      | NULL                                                                                                          |
-| Insured               | FDIC                                                                                                          |
-| Rehypothecated        | #                                                                                                             |
+##### Insured Unsecured Wholesale Non-Operational Non-Financial
+| Field            | Value                                                                                                         |
+|------------------|---------------------------------------------------------------------------------------------------------------|
+| Product          | O.D.5 and 6                                                                                                   |
+| Counterparty     | Non-Financial Corporate, Sovereign, Central Bank, GSE, PSE, MDB, Other Supranational, Debt Issuing SPE, Other |
+| Maturity Amount  | *                                                                                                             |
+| Maturity Bucket  | <= 30 calendar days                                                                                           |
+| Collateral Class | NULL or Other                                                                                                 |
+| Collateral Value | NULL                                                                                                          |
+| Insured          | FDIC                                                                                                          |
+| Rehypothecated   | #                                                                                                             |
 
 #### (§.32(h)(1)(ii)(A))
-##### Not Fully Insured Unsecured Wholesale Non-Operational Non-Financial 
-| Field                 | Value                                                                                                         |
-|-----------------------|---------------------------------------------------------------------------------------------------------------|
-| Product               | O.D.5 and 6                                                                                                   |
-| Counterparty          | Non-Financial Corporate, Sovereign, Central Bank, GSE, PSE, MDB, Other Supranational, Debt Issuing SPE, Other |
-| Maturity Amount       | *                                                                                                             |
-| Maturity Bucket       | <= 30 calendar days                                                                                           |
-| Collateral Class      | NULL or Other                                                                                                 |
-| Collateral Value      | NULL                                                                                                          |
-| Insured               | Not FDIC                                                                                                      |
-| Rehypothecated        | #                                                                                                             |
+##### Not Fully Insured Unsecured Wholesale Non-Operational Non-Financial
+| Field            | Value                                                                                                         |
+|------------------|---------------------------------------------------------------------------------------------------------------|
+| Product          | O.D.5 and 6                                                                                                   |
+| Counterparty     | Non-Financial Corporate, Sovereign, Central Bank, GSE, PSE, MDB, Other Supranational, Debt Issuing SPE, Other |
+| Maturity Amount  | *                                                                                                             |
+| Maturity Bucket  | <= 30 calendar days                                                                                           |
+| Collateral Class | NULL or Other                                                                                                 |
+| Collateral Value | NULL                                                                                                          |
+| Insured          | Not FDIC                                                                                                      |
+| Rehypothecated   | #                                                                                                             |
 
 #### (§.32(j)(1)(i))
-##### Secured Funding L1 
-| Field                 | Value                                                                                                                                                                                                                                                                                                                                                                |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Product               | O.D.4, 5, 6 and 7                                                                                                                                                                                                                                                                                                                                                    |
-| Counterparty          | Non-Financial Corporate, Sovereign, Central Bank (FRB and other central banks where the sovereign has not established its own outflow rate), GSE, PSE, MDB, Other Supranational, Pension Fund, Bank, Broker-Dealer, Investment Company or Advisor, Financial Market Utility, Other Supervised Non-Bank Financial Entity, Non-Regulated Fund, Debt Issuing SPE, Other |
-| Maturity Amount       | *                                                                                                                                                                                                                                                                                                                                                                    |
-| Maturity Bucket       | <= 30 calendar days                                                                                                                                                                                                                                                                                                                                                  |
-| Collateral Class      | Level 1 HQLA                                                                                                                                                                                                                                                                                                                                                         |
-| Collateral Value      | To the extent the Collateral Value is less than the Maturity Amount, treat the Maturity Amount less the Collateral Value amount as unsecured wholesale funding under .32(h)                                                                                                                                                                                          |
-| Insured               | #                                                                                                                                                                                                                                                                                                                                                                    |
-| Rehypothecated        | #                                                                                                                                                                                                                                                                                                                                                                    |
-
+##### Secured Funding L1
+| Field            | Value                                                                                                                                                                                                                                                                                                                                                                |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Product          | O.D.4, 5, 6 and 7                                                                                                                                                                                                                                                                                                                                                    |
+| Counterparty     | Non-Financial Corporate, Sovereign, Central Bank (FRB and other central banks where the sovereign has not established its own outflow rate), GSE, PSE, MDB, Other Supranational, Pension Fund, Bank, Broker-Dealer, Investment Company or Advisor, Financial Market Utility, Other Supervised Non-Bank Financial Entity, Non-Regulated Fund, Debt Issuing SPE, Other |
+| Maturity Amount  | *                                                                                                                                                                                                                                                                                                                                                                    |
+| Maturity Bucket  | <= 30 calendar days                                                                                                                                                                                                                                                                                                                                                  |
+| Collateral Class | Level 1 HQLA                                                                                                                                                                                                                                                                                                                                                         |
+| Collateral Value | To the extent the Collateral Value is less than the Maturity Amount, treat the Maturity Amount less the Collateral Value amount as unsecured wholesale funding under .32(h)                                                                                                                                                                                          |
+| Insured          | #                                                                                                                                                                                                                                                                                                                                                                    |
+| Rehypothecated   | #                                                                                                                                                                                                                                                                                                                                                                    |
 #### (§.32(j)(1)(ii))
 ##### Secured Funding L2A 
-| Field                 | Value                                                                                                                                                                                                                                                                                                                                                                |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Product               | O.D.4 (not FDIC insured), 5, 6 and 7                                                                                                                                                                                                                                                                                                                                 |
-| Counterparty          | Non-Financial Corporate, Sovereign, Central Bank (FRB and other central banks where the sovereign has not established its own outflow rate), GSE, PSE, MDB, Other Supranational, Pension Fund, Bank, Broker-Dealer, Investment Company or Advisor, Financial Market Utility, Other Supervised Non-Bank Financial Entity, Non-Regulated Fund, Debt Issuing SPE, Other |
-| Maturity Amount       | *                                                                                                                                                                                                                                                                                                                                                                    |
-| Maturity Bucket       | <= 30 calendar days                                                                                                                                                                                                                                                                                                                                                  |
-| Collateral Class      | Level 2A HQLA                                                                                                                                                                                                                                                                                                                                                        |
-| Collateral Value      | To the extent the Collateral Value is less than the Maturity Amount, treat the Maturity Amount less the Collateral Value amount as unsecured wholesale funding under .32(h)                                                                                                                                                                                          |
-| Insured               | If O.D.4 then not FDIC, otherwise #                                                                                                                                                                                                                                                                                                                                  |
-| Rehypothecated        | #                                                                                                                                                                                                                                                                                                                                                                    |
+| Field            | Value                                                                                                                                                                                                                                                                     |
+|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Product          | O.D.4 (not FDIC insured), 5, 6 and 7                                                                                                                                                                                                                                      |
+| Counterparty     | Non-Financial Corporate, Sovereign, Central Bank, GSE, PSE, MDB, Other Supranational, Pension Fund, Bank, Broker-Dealer, Investment Company or Advisor, Financial Market Utility, Other Supervised Non-Bank Financial Entity, Non-Regulated Fund, Debt Issuing SPE, Other |
+| Maturity Amount  | *                                                                                                                                                                                                                                                                         |
+| Maturity Bucket  | <= 30 calendar days                                                                                                                                                                                                                                                       |
+| Collateral Class | Level 2A HQLA                                                                                                                                                                                                                                                             |
+| Collateral Value | To the extent the Collateral Value is less than the Maturity Amount, treat the Maturity Amount less the Collateral Value amount as unsecured wholesale funding under .32(h)                                                                                               |
+| Insured          | If O.D.4 then not FDIC, otherwise #                                                                                                                                                                                                                                       |
+| Rehypothecated   | #                                                                                                                                                                                                                                                                         |
 
 #### (§.32(j)(1)(iii))
 ##### Secured Funding from Governmental Entities not L1 or L2A 
@@ -213,40 +212,39 @@ for non-technical writers taking shortcuts (like "I.A.1, 2, and 3" means any of 
 
 #### (§.32(j)(2))
 ##### Secured but Lower Unsecured Rate 
-| Field                 | Value                                                                                                                                                                                                                                                                                                                                                                                    |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Product               | O.D.4 (only collateralized deposits)                                                                                                                                                                                                                                                                                                                                                     |
-| Counterparty          | Non-Financial Corporate, PSE, Other Supranational, Pension Fund, Bank, Broker-Dealer, Investment Company or Advisor, Financial Market Utility, Other Supervised Non-Bank Financial Entity, Non-Regulated Fund, Debt Issuing SPE, Other; if FDIC insured: Sovereigns, GSEs, MDBs, Central Bank (FRB and other central banks where the sovereign has not established its own outflow rate) |
-| Maturity Amount       | *                                                                                                                                                                                                                                                                                                                                                                                        |
-| Maturity Bucket       | <= 30 calendar days                                                                                                                                                                                                                                                                                                                                                                      |
-| Collateral Class      | If FDIC insured: Not Level 1; if not FDIC insured: Level 2B or Non-HQLA                                                                                                                                                                                                                                                                                                                  |
-| Collateral Value      | #                                                                                                                                                                                                                                                                                                                                                                                        |
-| Insured               | *                                                                                                                                                                                                                                                                                                                                                                                        |
-| Rehypothecated        | N                                                                                                                                                                                                                                                                                                                                                                                        |
+| Field            | Value                                                                                                                                                                                                                                                                                        |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Product          | O.D.4                                                                                                                                                                                                                                                                                        |
+| Counterparty     | Non-Financial Corporate, PSE, Other Supranational, Pension Fund, Bank, Broker-Dealer, Investment Company or Advisor, Financial Market Utility, Other Supervised Non-Bank Financial Entity, Non-Regulated Fund, Debt Issuing SPE, Other; if FDIC insured: Sovereigns, GSEs, MDBs,Central Bank |
+| Maturity Amount  | *                                                                                                                                                                                                                                                                                            |
+| Maturity Bucket  | <= 30 calendar days                                                                                                                                                                                                                                                                          |
+| Collateral Class | If FDIC insured: Not Level 1; if not FDIC insured: Level 2B or Non-HQLA                                                                                                                                                                                                                      |
+| Collateral Value | #                                                                                                                                                                                                                                                                                            |
+| Insured          | *                                                                                                                                                                                                                                                                                            |
+| Rehypothecated   | N                                                                                                                                                                                                                                                                                            |
 
 #### (§.32(j)(2))
 ##### Secured but Lower Unsecured Rate 
-| Field                 | Value                                                                                                                                                                                                                                  |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Product               | O.D.7 (only collateralized deposits)                                                                                                                                                                                                   |
-| Counterparty          | Non-Financial Corporate, PSE, Other Supranational, Pension Fund, Bank, Broker-Dealer, Investment Company or Advisor, Financial Market Utility, Other Supervised Non-Bank Financial Entity, Non-Regulated Fund, Debt Issuing SPE, Other |
-| Maturity Amount       | *                                                                                                                                                                                                                                      |
-| Maturity Bucket       | <= 30 calendar days                                                                                                                                                                                                                    |
-| Collateral Class      | Level 2B or Non-HQLA                                                                                                                                                                                                                   |
-| Collateral Value      | #                                                                                                                                                                                                                                      |
-| Insured               | #                                                                                                                                                                                                                                      |
-| Rehypothecated        | N                                                                                                                                                                                                                                      |
+| Field            | Value                                                                                                                                                                                                                                  |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Product          | O.D.7                                                                                                                                                                                                                                  |
+| Counterparty     | Non-Financial Corporate, PSE, Other Supranational, Pension Fund, Bank, Broker-Dealer, Investment Company or Advisor, Financial Market Utility, Other Supervised Non-Bank Financial Entity, Non-Regulated Fund, Debt Issuing SPE, Other |
+| Maturity Amount  | *                                                                                                                                                                                                                                      |
+| Maturity Bucket  | <= 30 calendar days                                                                                                                                                                                                                    |
+| Collateral Class | Level 2B or Non-HQLA                                                                                                                                                                                                                   |
+| Collateral Value | #                                                                                                                                                                                                                                      |
+| Insured          | #                                                                                                                                                                                                                                      |
+| Rehypothecated   | N                                                                                                                                                                                                                                      |
 
 #### (§.32(k))
 ##### Foreign Central Banking Borrowing 
-| Field                 | Value                                                                                                                                                                                                                                                                                                        |
-|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Product               | O.D.4, 5, 6, 7 (only collateralized deposits) (foreign central banks where the sovereign has established an LCR outflow rate; if the foreign central bank has not established an outflow rate, then the outflow should be calculated through the secured funding tables above, see relevant footnotes above) |
-| Counterparty          | Central Bank                                                                                                                                                                                                                                                                                                 |
-| Maturity Amount       | *                                                                                                                                                                                                                                                                                                            |
-| Maturity Bucket       | <= 30 calendar days                                                                                                                                                                                                                                                                                          |
-| Collateral Class      | *                                                                                                                                                                                                                                                                                                            |
-| Collateral Value      | *                                                                                                                                                                                                                                                                                                            |
-| Insured               | #                                                                                                                                                                                                                                                                                                            |
-| Rehypothecated        | #                                                                                                                                                                                                                                                                                                            |
-| Internal Counterparty | #                                                                                                                                                                                                                                                                                                            |
+| Field                 | Value               |
+|-----------------------|---------------------|
+| Product               | O.D.4, 5, 6, 7      |
+| Counterparty          | Central Bank        |
+| Maturity Amount       | *                   |
+| Maturity Bucket       | <= 30 calendar days |
+| Collateral Class      | *                   |
+| Collateral Value      | *                   |
+| Insured               | #                   |
+| Rehypothecated        | #                   |

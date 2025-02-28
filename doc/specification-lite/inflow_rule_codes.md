@@ -61,4 +61,29 @@ There are three rule codes pertaining to Inflows Assets.
 | Treasury Control          | #                                |
 | Encumbrance Type          | #                                |
 
-                                                                                                                                                                                                                                                                                         |
+
+### Supplemental
+
+#### (§.22(a)(3))
+##### Early Hedge Termination Outflows
+| Field                 | Value       |
+|-----------------------|-------------|
+| Reporting Entity      | LCR Firm    |
+| PID                   | S.L.1       |
+| Product               | Matches PID |
+| Market Value          | *           |
+| Collateral Class      | HQLA        |
+| Internal              | #           |
+| Internal Counterparty | #           |
+
+#### (§.22(a)(4))
+##### Early Hedge Termination Outflows
+| Field                 | Value        |
+|-----------------------|--------------|
+| Reporting Entity      | LCR Firm     |
+| PID                   | S.L.3        |
+| Product               | Matches PID  |
+| Market Value          | *            |
+| Collateral Class      | HQLA         |
+| Internal              | #            |
+| Internal Counterparty | #            |

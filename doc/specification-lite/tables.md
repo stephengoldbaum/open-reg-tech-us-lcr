@@ -7,7 +7,8 @@
 | Sub-Product               | text    | no       |
 | Market Value              | numeric | yes      |
 | Currency                  | text    | yes      |
-| Converted Market Value    | text    | yes      |
+| Converted                 | text    | yes      |
+| Market Value              | text    | yes      |
 | Maturity Bucket           | text    | yes      |
 | Forward Start Amount      | numeric | no       |
 | Forward Start Bucket      | text    | no       |
@@ -21,10 +22,20 @@
 | Product                | text    | yes      |
 | Counterparty           | text    | yes      |
 | Currency               | text    | yes      |
-| Converted Market Value | text    | yes      |
+| Converted              | text    | yes      |
+| Market Value           | text    | yes      |
 | Maturity Amount        | numeric | yes      |
 | Maturity Bucket        | text    | yes      |
 | Collateral Class       | text    | no       |
 | Collateral Value       | numeric | no       |
 | Insured                | text    | yes      |
 | Rehypothecated         | text    | no       |
+
+## Liquidity Risk Measurement
+| Column                 | Type    | Required |
+|------------------------|---------|----------|
+| Product                | text    | yes      |
+| Currency               | text    | yes      |
+| Converted              | text    | yes      |
+| Market Value           | text    | yes      |
+| Collateral Class       | text    | no       |
